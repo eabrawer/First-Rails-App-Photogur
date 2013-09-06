@@ -1,0 +1,23 @@
+<h1>Add an Image</h1>
+
+<%= form_for @picture do |form| %>
+ <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+ </p>
+  <p>
+    <%= form.label :author %><br>
+    <%= form.text_field :author %>
+ </p>
+ <p>
+    <%= form.label :photo %><br>
+    <%= form.text_field :photo %>
+ </p>
+ <p>
+    <%= form.label :comment %><br>
+    <%= form.text_area :comment %>
+ </p>
+ <p>
+    <%= submit_tag "Save" %>
+ </p>
+<% end %>
